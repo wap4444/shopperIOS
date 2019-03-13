@@ -37,7 +37,7 @@ var ref = cordova.InAppBrowser.open(jsonData.notification.payload.additionalData
         iosSettings["kOSSettingsKeyInAppLaunchURL"] = true;
         //ПОДКЛЮЧЕНИЕ ПУШЕЙ 
            window.plugins.OneSignal
-          .startInit("52fd2532-f4de-48bd-a818-c918662346cd")
+          .startInit("6220ca4a-f1ef-4a59-8f58-7160c898bd97")
           .handleNotificationReceived(didReceiveRemoteNotificationCallBack)
 	  .handleNotificationOpened(didOpenRemoteNotificationCallBack)
           .inFocusDisplaying(window.plugins.OneSignal.OSInFocusDisplayOption.None)
