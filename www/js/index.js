@@ -16,13 +16,13 @@ ref.close();
 document.addEventListener("online", onOnline, false);
  
 function onOnline() {
-var ref = cordova.InAppBrowser.open('http://elecor.controlsoft.kz/app/?push='+localStorage.ipush, '_blank', 'location=no,toolbar=no,disallowoverscroll=yes');
+var ref = cordova.InAppBrowser.open('http://spv.kz/login.php?push='+localStorage.ipush, '_blank', 'location=no,toolbar=no,disallowoverscroll=yes');
 }
 if(localStorage.ipush){}
 else{}
 
 $("#BtnEnt" ).click(function() {
-var ref = cordova.InAppBrowser.open('http://elecor.controlsoft.kz/app/?push='+localStorage.ipush, '_blank', 'location=no,toolbar=no,disallowoverscroll=yes');
+var ref = cordova.InAppBrowser.open('http://spv.kz/login.php?push='+localStorage.ipush, '_blank', 'location=no,toolbar=no,disallowoverscroll=yes');
 });
         
 function didReceiveRemoteNotificationCallBack(jsonData) {
@@ -46,7 +46,7 @@ var ref = cordova.InAppBrowser.open(jsonData.notification.payload.additionalData
 window.plugins.OneSignal.getIds(function(ids) {
 ipush = ids.userId;
 localStorage.ipush=ipush;
-var ref = cordova.InAppBrowser.open('http://elecor.controlsoft.kz/app/?push='+ipush, '_blank', 'location=no,toolbar=no,disallowoverscroll=yes');
+var ref = cordova.InAppBrowser.open('http://spv.kz/login.php?push='+ipush, '_blank', 'location=no,toolbar=no,disallowoverscroll=yes');
 });
     }
 };
